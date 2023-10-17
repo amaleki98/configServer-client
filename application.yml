@@ -2,8 +2,7 @@
 my:
     text: hello abbas **** AUTO REFRESH10001 *****
 spring:
-  profiles:
-    active: aaa
+  
      datasource:
          url: jdbc:mysql://localhost:3306/mysql_maindb
          username: root
