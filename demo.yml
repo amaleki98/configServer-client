@@ -14,5 +14,5 @@ spring:
       dialect: org.hibernate.dialect.MySQL8Dialect
       show-sql: false
     properties:
-      hibernate.format_sql: true
+      hibernate.format_sql: false
       hibernate.generate_statistics: true
