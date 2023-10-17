@@ -1,5 +1,5 @@
 my:
-    text: hello abbas **** AUTO REFRESH10 *****
+    text: hello abbas **** AUTO REFRESH10001 *****
 datasource:
        url: jdbc:mysql://localhost:3306/my_database
        username: root
