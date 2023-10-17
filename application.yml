@@ -1,8 +1,8 @@
 my:
     text: hello abbas **** AUTO REFRESH10 *****
-db:
-  url: jdbc:mysql://localhost:3306/my_database
-  username: root
-  password: 123456
-  driverclassname: com.mysql.cj.jdbc.Driver
+datasource:
+       url: jdbc:mysql://localhost:3306/my_database
+       username: root
+       password: 123456
+       driverclassname: com.mysql.cj.jdbc.Driver
   
