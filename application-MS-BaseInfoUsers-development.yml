@@ -1,8 +1,8 @@
 my:
     text: hello; **** This is MS-BaseInfoUsers Develop Enviroment *****
 spring:
-    config:
-      profile: development
+      profiles:
+         active: development
      datasource:
          url: jdbc:mysql://localhost:3306/mysql_maindb
          username: root
