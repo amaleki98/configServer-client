@@ -26,47 +26,5 @@ spring:
     hibernate:
       ddl-auto: create
 
----
-# پروفایل Testing
-spring:
-  profiles: Testing
-  datasource:
-    url: jdbc:mysql://localhost:3306/db_profile2
-    username: username2
-    password: password2
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate.format_sql: true
-      hibernate.generate_statistics: true
 
----
-# پروفایل Staging
-spring:
-  profiles: Staging
-  datasource:
-    url: jdbc:mysql://localhost:3306/db_profile3
-    username: username3
-    password: password3
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate.format_sql: true
-      hibernate.generate_statistics: true
 
----
-# پروفایل Production
-spring:
-  profiles: Production
-  datasource:
-    url: jdbc:mysql://localhost:3306/db_profile4
-    username: username4
-    password: password4
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate.format_sql: true
-      hibernate.generate_statistics: true
