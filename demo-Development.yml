@@ -1,75 +1,72 @@
+# تنظیمات مشترک
 my:
   text: "hello; **** This is demo123 Develop Environment *****"
 
-# تنظیمات برای پروفایل اول (Development)
+# تنظیمات Spring مشترک
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show-sql: false
+      properties:
+        hibernate.format_sql: false
+        hibernate.generate_statistics: true
+
+---
+# پروفایل Development
 spring:
   profiles: Development
   datasource:
     url: jdbc:mysql://localhost:3306/db_profile1
     username: username1
     password: password1
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: create
-      dialect: org.hibernate.dialect.MySQL8Dialect
-      show-sql: false
-    properties:
-      hibernate.format_sql: false
-      hibernate.generate_statistics: true
 
-# تنظیمات برای پروفایل دوم(Testing)
+---
+# پروفایل Testing
 spring:
   profiles: Testing
   datasource:
     url: jdbc:mysql://localhost:3306/db_profile2
     username: username2
     password: password2
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
-      dialect: org.hibernate.dialect.MySQL8Dialect
-      show-sql: true
     properties:
       hibernate.format_sql: true
       hibernate.generate_statistics: true
 
-# تنظیمات برای پروفایل سوم(profile3)
+---
+# پروفایل Staging
 spring:
   profiles: Staging
   datasource:
     url: jdbc:mysql://localhost:3306/db_profile3
     username: username3
     password: password3
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
-      dialect: org.hibernate.dialect.MySQL8Dialect
-      show-sql: true
     properties:
       hibernate.format_sql: true
       hibernate.generate_statistics: true
 
-
-# تنظیمات برای پروفایل چهارم(Production)
+---
+# پروفایل Production
 spring:
   profiles: Production
   datasource:
     url: jdbc:mysql://localhost:3306/db_profile4
     username: username4
     password: password4
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
-      dialect: org.hibernate.dialect.MySQL8Dialect
-      show-sql: true
     properties:
       hibernate.format_sql: true
       hibernate.generate_statistics: true
