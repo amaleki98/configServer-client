@@ -1,5 +1,5 @@
 my:
-  text: "hello; **** This is demo123 Develop Environment *****"
+  text: "hello; **** This is USER Develop Environment *****"
 
 spring:
   datasource:
