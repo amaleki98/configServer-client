@@ -14,17 +14,7 @@ spring:
         hibernate.format_sql: false
         hibernate.generate_statistics: true
 
----
-# پروفایل Development
-spring:
-  profiles: Development
-  datasource:
-    url: jdbc:mysql://localhost:3306/db_profile1
-    username: username1
-    password: password1
-  jpa:
-    hibernate:
-      ddl-auto: create
+
 
 
 
