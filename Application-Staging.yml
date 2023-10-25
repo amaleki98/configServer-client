@@ -1,0 +1,17 @@
+my
+    text hello;  This is USER-Staging Enviroment 
+spring
+     datasource
+         url jdbcmysqllocalhost3306mysql_maindb_USER-Staging
+         username root
+         password 123456
+         driverclassname com.mysql.cj.jdbc.Driver
+       jpa
+          hibernate
+            ddl-auto update
+            dialect org.hibernate.dialect.MySQL8Dialect
+            show-sql true
+          properties
+             hibernate.format_sql true
+             hibernate.generate_statistics true  
+  
