@@ -1,6 +1,9 @@
 my:
   text: "hello; **** This is ALL MS NOT Environment *****"
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8560/eureka
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/mysql_maindb1
