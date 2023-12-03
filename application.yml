@@ -3,10 +3,10 @@ my:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.16.13.237:6560/eureka
+      defaultZone: http://localhost:6560/eureka
 spring:
   datasource:
-    url: jdbc:mysql://172.16.13.237:3306/mysql_maindb1
+    url: jdbc:mysql://localhost:3306/mysql_maindb1
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
